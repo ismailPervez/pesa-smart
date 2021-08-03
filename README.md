@@ -4,6 +4,8 @@ a simple money transfer system that enables users to send and receive money worl
 ## Description
 Pesa Smart is an online money transfer web application that uses realtime database to enable users to sign up, log in and also send money to and receive from other users.
 
+link of live site is [here]( https://ismailpervez.github.io/pesa-smart/)
+
 the web app is made using the follwing technologies:
 
 ### User Interface
