@@ -11,11 +11,86 @@
     padding: 0;
     box-sizing: border-box;
 }
-#hdr1{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 900;
-    background-color: rgb(31, 31, 216);
+nav{
+    background-color: rgb(52, 52, 235);
+    height: 130px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+label.sqr{
+    color: white;
+    line-height: -10px;
+    padding: 0 100px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background:rgb(52, 52, 235) ;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height:100vh;
+        background: white;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition:all.5s
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: navy;
+    }
 }
 #abt{
     text-align: center;
@@ -39,4 +114,10 @@
 }
 #hdr2{
     background-color:  rgb(31, 31, 216);;
+}
+#signup{
+    margin-left: 470px;
+    width: 150px;
+    border-radius: 15%;
+    height: 40px;
 }
