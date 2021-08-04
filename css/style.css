@@ -59,6 +59,9 @@ a.active{
     cursor: pointer;
     display: none;
 }
+.fas {
+    display: show;
+}
 #check{
     display: none;
 }
