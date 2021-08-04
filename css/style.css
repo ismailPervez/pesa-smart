@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;800&display=swap');
+
+/* variables */
+:root {
+    --font: 'Sarabun', sans-serif;
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hdr1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    background-color: rgb(31, 31, 216);
+}
+#abt{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+}
+#sqr{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+#cust{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+#our{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+#hdr2{
+    background-color:  rgb(31, 31, 216);;
+}
