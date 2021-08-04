@@ -6,8 +6,38 @@
 }
 
 /* resets */
-* {
+*{
+  
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+footer {
+    text-align: center;
+    padding-top: 30px;
+    background-color: #4251D1;
+    color: wheat;
+    padding-bottom: 70px;
+    font-size: 18px;
+}
+footer h1{
+    font-weight: 100;
+}
+.submain{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+.submain h2{
+    font-weight: 100;
+}
+
+.container-fluid{
+    background-color: #4251D1;
+    
+}
+#navbar-nav{
+    color: white;
 }
