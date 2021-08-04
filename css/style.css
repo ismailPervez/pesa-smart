@@ -44,7 +44,11 @@ nav ul li a{
     border-radius: 3px;
 }
 a.active,a:hover{
-    background:rgb(52, 52, 235) ;
+    background:white;
+    transition: .5s;
+}
+a.active{
+    color: black;
 }
 .checkbtn{
     font-size: 30px;
@@ -85,45 +89,50 @@ a.active,a:hover{
         display: block;
         margin: 50px 0;
         line-height: 30px;
-        
+
     }
     nav ul li a{
         font-size: 20px;
     }
     a:hover,a.active{
         background: none;
-        color: navy;
+        color:white;
     }
     #check:checked ~ ul{
         left: 0;
     }
 }
 #abt{
-    text-align: center;
     font-size: x-large;
     font-weight: 900;
 }
 #sqr{
-    text-align: center;
     font-size: large;
     font-weight: 600;
 }
-#cust{
-    text-align: center;
-    font-size: large;
-    font-weight: 600;
-}
-#our{
-    text-align: center;
-    font-size: large;
-    font-weight: 600;
-}
-#hdr2{
-    background-color:  rgb(31, 31, 216);;
-}
+
 #signup{
     margin-left: 470px;
-    width: 150px;
-    border-radius: 15%;
+    width: 120px;
+    border-radius: 7%;
     height: 40px;
+    background: rgb(52 , 52 , 253)
+}
+#trns{
+    width: 50px;
+}
+#hse{
+    width: 150px;
+    float: right;
+    margin: 120px;
+    margin-top: 20px;
+}
+#coin{
+    width: 150px;
+    margin-right: 10px;  
+}
+#note{
+    width: 150px;
+    margin-left: 470px;
+    margin-top: -160px;
 }
