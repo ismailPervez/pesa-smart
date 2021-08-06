@@ -9,29 +9,33 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="/forms/forms.css">
     <title>pesa smart - account page</title>
 </head>
 <body>
     <header>
         <h1>pesa smart</h1>
         <nav>
-            <a href="/accounts/index.html">home</a>
+            <a href="index.html">home</a>
             <a href="#">contacts</a>
-            <a id="login-link" href="#">login</a>
+            <a id="login-link" href="login.html">login</a>
             <button id="log-out-btn">logout</button>
-            <a id="sign-up-nav-link" href="/forms/signup.html">sign up</a>
+            <a id="sign-up-nav-link" href="signup.html">sign up</a>
         </nav>
     </header>
     <main>
         <div class="form-container">
-            <h2>login to an account</h2>
-            <form id="login-form">
+            <h2>create an account</h2>
+            <form id="sign-up-form">
+                <label for="fullname">full name</label>
+                <input id="full-name" type="text" name="fullname" placeholder="enter full name...">
+                <label for="username">username</label>
+                <input id="username" type="text" name="username" placeholder="enter username...">
                 <label for="email">email</label>
                 <input id="email" type="email" name="email" placeholder="enter email...">
                 <label for="password">password</label>
                 <input id="password" type="password" name="password" placeholder="enter password...">
-                <button id="login-btn" type="submit">login</button>
+                <button id="submit-btn" type="submit">sign up</button>
             </form>
         </div>
     </main>
@@ -97,7 +101,7 @@
         const auth = firebase.auth();
         db.settings({timestampsInSnapshots: true}); // so we dont get warnings and errors in the console
         </script>
-        <script src="login.js"></script>
         <script src="/accounts/script.js"></script>
+        <script src="/forms/signup.js"></script>
 </body>
 </html>
