@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGNUP</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,35 +38,37 @@
     <h2 class="text-center" style="color: blue;"> <u>  SIGN UP</u></h2>
     <br>
     <br>
-    <div class="form-group text-center">
-        <label for="exampleFormControlInput1" style="color: blue;">FULL NAME :</label>
-        <input type="fullname"  style="width: 25%;" name="fullname" class=" text-center" id="exampleFormControlInput1" placeholder="Enter your Full Name..">
-    </div>
-    <br>
-    <div class="form-group text-center">
-        <label for="exampleFormControlInput1" style="color: blue;">EMAIL ADDRESS:</label>
-        <input  style="width: 23%;" type="email" name="email" class=" text-center" placeholder="Enter your email..">
-    </div>
-    <br>
-
-    <div class="form-group text-center">
-        <label for="exampleFormControlInput1" style="color: blue;">USERNAME :</label>
-        <input type="username" style="width: 26%;"  name="username" class=" text-center" placeholder="Enter your username..">
-    </div>
-    <br>
-    <div class="form-group text-center">
-        <label for="exampleFormControlInput1" style="color: blue;">YOUR PASSWORD :</label>
-        <input  style="width: 22%;" type="password" name="password" class=" text-center" placeholder="********">
     
-    </div>
-    <br>
-    <br>
-    <div class="text-center ">
-        <button type="button" class="btn btn-primary">SIGN-UP</button>
+    <form id="sign-up-form">
+        <div class="form-group text-center">
+            <label for="exampleFormControlInput1" style="color: blue;">FULL NAME :</label>
+            <input type="text" id="full-name" style="width: 25%;" name="fullname" class=" text-center" placeholder="Enter your Full Name..">
+        </div>
+        <br>
+        <div class="form-group text-center">
+            <label for="exampleFormControlInput1" style="color: blue;">EMAIL ADDRESS:</label>
+            <input id="email"  style="width: 23%;" type="email" name="email" class=" text-center" placeholder="Enter your email..">
+        </div>
+        <br>
+    
+        <div class="form-group text-center">
+            <label for="exampleFormControlInput1" style="color: blue;">USERNAME :</label>
+            <input id="username" type="username" style="width: 26%;"  name="username" class=" text-center" placeholder="Enter your username..">
+        </div>
+        <br>
+        <div class="form-group text-center">
+            <label for="exampleFormControlInput1" style="color: blue;">YOUR PASSWORD :</label>
+            <input id="password"  style="width: 22%;" type="password" name="password" class=" text-center" placeholder="********">
+        </div>
         <br>
         <br>
-    </div>
-    <br>
+        <div class="text-center ">
+            <button type="submit" id="submit-btn" class="btn btn-primary">SIGN-UP</button>
+            <br>
+            <br>
+        </div>
+        <br>
+    </form>
 
     <footer>
         <h1>Contact Us</h1>
@@ -95,7 +101,26 @@
        </div>
         ©2021 | All rights reserved
     </footer>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyApMNUuKpwG94Z4cJ0pE3q57a4Isia9Y7Y",
+            authDomain: "pesa-smart-e2213.firebaseapp.com",
+            projectId: "pesa-smart-e2213",
+            storageBucket: "pesa-smart-e2213.appspot.com",
+            messagingSenderId: "698395888140",
+            appId: "1:698395888140:web:99ef1c9a0ab9d4c5c0bc29",
+            measurementId: "G-57655BHRWM"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
 
-    
+        const db = firebase.firestore();
+        const auth = firebase.auth();
+        db.settings({timestampsInSnapshots: true}); // so we dont get warnings and errors in the console
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
