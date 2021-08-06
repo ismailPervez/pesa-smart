@@ -12,7 +12,7 @@ loginBtn.addEventListener('click', (event) => {
     auth.signInWithEmailAndPassword(email, password)
         .then(cred => {
             loginForm.reset();
-            window.location.replace('../index.html')
+            window.location.replace('index.html')
             alert.textContent = `you have been successfully logged in with ${email}`;
         })
         .catch(error => {
