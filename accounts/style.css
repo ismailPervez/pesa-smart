@@ -84,7 +84,8 @@ nav a {
 }
 
 #login-link {
-    display: none;
+    /* display: none; */
+    display: inline-flex;
 }
 
 #login-link.active {

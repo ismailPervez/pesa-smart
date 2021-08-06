@@ -8,7 +8,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/accounts/style.css">
     <link rel="stylesheet" href="/forms/forms.css">
     <title>pesa smart - account page</title>
 </head>
@@ -30,9 +30,9 @@
     <header>
         <h1>pesa smart</h1>
         <nav>
-            <a href="/accounts/index.html">home</a>
+            <a href="index.html">home</a>
             <a href="#footer">contacts</a>
-            <a id="login-link" href="/forms/login.html">login</a>
+            <a id="login-link" class="active" href="/forms/login.html">login</a>
             <button id="log-out-btn">logout</button>
             <a id="sign-up-nav-link" href="/forms/signup.html">sign up</a>
         </nav>
@@ -55,13 +55,13 @@
                 <h2>Our services</h2>
                 <div class="services-img">
                     <div class="img">
-                        <img src="./images/bank-transfer.png" alt="bank-transfer">
+                        <img src="/accounts/images/bank-transfer.png" alt="bank-transfer">
                     </div>
                     <div class="img">
-                        <img src="./images/money-transfer.png" alt="money-transfer">
+                        <img src="/accounts/images/money-transfer.png" alt="money-transfer">
                     </div>
                     <div class="img">
-                        <img src="./images/transfer-money.png" alt="transfer-money">
+                        <img src="/accounts/images/transfer-money.png" alt="transfer-money">
                     </div>
                 </div>
             </article>
@@ -135,6 +135,6 @@
         const auth = firebase.auth();
         db.settings({timestampsInSnapshots: true}); // so we dont get warnings and errors in the console
         </script>
-        <script src="script.js"></script>
+        <script src="/accounts/script.js"></script>
 </body>
 </html>
